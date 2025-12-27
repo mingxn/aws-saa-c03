@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+</head>
+<body>
+    {{ block "header" . }}{{ partial "header.html" . }}{{ end }}
+
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
+
+    <script src="{{ "js/quiz.js" | relURL }}"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="container">
+    <h1>{{ .Title }}</h1>
+
+    <div class="question-list">
+        {{ range .Pages }}
+        <article class="question-item">
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            {{ with .Params.categories }}
+            <div class="tags">
+                {{ range . }}
+                <span class="tag">{{ . }}</span>
+                {{ end }}
+            </div>
+            {{ end }}
+            {{ with .Params.domain }}
+            <p class="domain">{{ . }}</p>
+            {{ end }}
+        </article>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

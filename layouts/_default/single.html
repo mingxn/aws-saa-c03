@@ -1,0 +1,59 @@
+{{ define "main" }}
+<div class="container question-page">
+    <article class="question" data-answer="{{ .Params.answer }}">
+        <header>
+            <h1>{{ .Title }}</h1>
+            {{ with .Params.categories }}
+            <div class="tags">
+                {{ range . }}
+                <span class="tag">{{ . }}</span>
+                {{ end }}
+            </div>
+            {{ end }}
+            {{ with .Params.domain }}
+            <p class="domain">Domain: {{ . }}</p>
+            {{ end }}
+        </header>
+
+        <div class="question-content">
+            <h2>Question</h2>
+            <p class="question-text">{{ .Params.question }}</p>
+
+            <form class="options" id="quiz-form">
+                {{ range $key, $value := .Params.options }}
+                <label class="option">
+                    <input type="radio" name="answer" value="{{ $key }}">
+                    <span class="option-label">{{ $key }}. {{ $value }}</span>
+                </label>
+                {{ end }}
+            </form>
+
+            <div class="actions">
+                <button id="submit-btn" class="btn btn-primary">Submit Answer</button>
+                <button id="reveal-btn" class="btn btn-secondary" style="display:none;">Show Answer</button>
+            </div>
+
+            <div id="result" class="result" style="display:none;">
+                <div class="feedback">
+                    <p class="feedback-text"></p>
+                </div>
+                {{ with .Params.explanation }}
+                <div class="explanation">
+                    <h3>Explanation</h3>
+                    <p>{{ . }}</p>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </article>
+
+    <nav class="question-nav">
+        {{ with .PrevInSection }}
+        <a href="{{ .RelPermalink }}" class="btn">← Previous</a>
+        {{ end }}
+        {{ with .NextInSection }}
+        <a href="{{ .RelPermalink }}" class="btn">Next →</a>
+        {{ end }}
+    </nav>
+</div>
+{{ end }}

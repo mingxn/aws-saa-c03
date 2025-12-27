@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="container home">
+    <section class="hero">
+        <h1>AWS Solutions Architect Associate (SAA-C03)</h1>
+        <p>Interactive Question Bank for Exam Preparation</p>
+    </section>
+
+    <section class="modes">
+        <div class="mode-card">
+            <h2>Practice Mode</h2>
+            <p>Get instant feedback with detailed explanations for each question.</p>
+            <a href="{{ "practice/" | relURL }}" class="btn btn-primary">Start Practice</a>
+        </div>
+
+        <div class="mode-card">
+            <h2>Exam Mode</h2>
+            <p>Simulate real exam conditions with timed questions and final scoring.</p>
+            <a href="{{ "exam/" | relURL }}" class="btn btn-secondary">Start Exam</a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <p>Total Questions: {{ len (where .Site.RegularPages "Section" "questions") }}</p>
+    </section>
+</div>
+{{ end }}
