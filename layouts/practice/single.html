@@ -1,0 +1,59 @@
+{{ define "main" }}
+<div class="container practice-session">
+    <div class="practice-header">
+        <div class="mode-indicator">Practice Mode</div>
+        <div class="progress-info">
+            <span id="question-progress">Question 1 of 20</span>
+        </div>
+    </div>
+
+    <div id="question-container" class="question-card">
+        <div class="question-meta">
+            <div id="question-category" class="category-tags-container"></div>
+            <span class="domain-info" id="question-domain"></span>
+        </div>
+
+        <div class="question-text" id="question-text"></div>
+
+        <form id="practice-form" class="options-list">
+            <!-- Options will be inserted here by JavaScript -->
+        </form>
+
+        <div class="question-actions">
+            <button id="check-answer-btn" class="btn btn-primary">Check Answer</button>
+            <button id="reveal-answer-btn" class="btn btn-secondary">Reveal Answer</button>
+        </div>
+
+        <div id="result" class="result" style="display: none;"></div>
+        <div id="explanation" class="explanation" style="display: none;"></div>
+
+        <div class="navigation-actions" style="display: none;">
+            <button id="next-question-btn" class="btn btn-primary">Next Question →</button>
+        </div>
+    </div>
+
+    <div class="session-progress">
+        <div class="progress-bar-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <div class="session-stats">
+            <span id="correct-count">Correct: 0</span>
+            <span id="incorrect-count">Incorrect: 0</span>
+            <span id="skipped-count">Skipped: 0</span>
+        </div>
+    </div>
+</div>
+
+<div id="results-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <h2>Practice Session Complete!</h2>
+        <div id="results-summary"></div>
+        <div class="modal-actions">
+            <button id="review-answers-btn" class="btn btn-secondary">Review Answers</button>
+            <button id="new-session-btn" class="btn btn-primary">New Practice Session</button>
+        </div>
+    </div>
+</div>
+
+<script src="{{ "js/practice.js" | relURL }}"></script>
+{{ end }}

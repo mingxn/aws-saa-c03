@@ -1,0 +1,55 @@
+{{ define "main" }}
+<div class="container practice-setup">
+    <h1>{{ .Title }}</h1>
+
+    <div class="practice-config">
+        <h2>Start Practice Session</h2>
+
+        <p class="practice-description">
+            Practice with randomly selected questions. Get instant feedback and explanations for each question.
+        </p>
+
+        <div class="config-section">
+            <label for="question-count">Number of Questions</label>
+            <select id="question-count">
+                <option value="10">10 Questions</option>
+                <option value="20">20 Questions</option>
+                <option value="30">30 Questions</option>
+                <option value="50">50 Questions</option>
+                <option value="65" selected>65 Questions (Full Exam)</option>
+            </select>
+        </div>
+
+        <div class="available-questions">
+            <p id="available-count">Loading available questions...</p>
+        </div>
+
+        <button id="start-practice-btn" class="btn btn-primary">Start Practice Session</button>
+    </div>
+
+    <div class="practice-history">
+        <h2>Recent Practice Sessions</h2>
+        <div id="history-list"></div>
+    </div>
+</div>
+
+<!-- Embed all questions as JSON for JavaScript -->
+<script>
+window.allQuestions = [
+    {{ range where .Site.AllPages "Section" "questions" }}
+    {
+        title: {{ .Title | jsonify }},
+        url: {{ .RelPermalink | jsonify }},
+        question: {{ .Params.question | jsonify }},
+        options: {{ .Params.options | jsonify }},
+        answer: {{ .Params.answer | jsonify }},
+        explanation: {{ .Params.explanation | jsonify }},
+        categories: {{ .Params.categories | jsonify }},
+        domain: {{ .Params.domain | jsonify }},
+        difficulty: {{ .Params.difficulty | jsonify }}
+    },
+    {{ end }}
+];
+</script>
+<script src="{{ "js/practice-setup.js" | relURL }}"></script>
+{{ end }}
