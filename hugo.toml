@@ -1,6 +1,6 @@
 baseURL = 'https://mingxn.github.io/aws-saa-c03/'
 languageCode = 'en-us'
-title = 'AWS SAA-C03 Question Bank'
+title = 'AWS SAA-C03 Exam Prep'
 
 [params]
   description = 'Interactive question bank for AWS Solutions Architect Associate (SAA-C03) exam preparation'
