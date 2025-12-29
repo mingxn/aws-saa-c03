@@ -223,8 +223,15 @@ class PracticeSession {
         }
 
         const question = this.session.questions[this.currentIndex];
-        const userAnswer = selected.value;
-        const correctAnswer = question.answer;
+        const userAnswer = selected.value.trim().toUpperCase();
+
+        // Strip surrounding quotes from answer (handles double-encoding issue)
+        let answerValue = (question.answer || '').trim();
+        // Remove surrounding quotes if present
+        if (answerValue.startsWith('"') && answerValue.endsWith('"')) {
+            answerValue = answerValue.slice(1, -1);
+        }
+        const correctAnswer = answerValue.toUpperCase();
         const isCorrect = userAnswer === correctAnswer;
 
         this.answered = true;
@@ -266,7 +273,13 @@ class PracticeSession {
         if (this.answered) return;
 
         const question = this.session.questions[this.currentIndex];
-        const correctAnswer = question.answer;
+
+        // Strip surrounding quotes from answer (handles double-encoding issue)
+        let answerValue = (question.answer || '').trim();
+        if (answerValue.startsWith('"') && answerValue.endsWith('"')) {
+            answerValue = answerValue.slice(1, -1);
+        }
+        const correctAnswer = answerValue;
 
         this.answered = true;
         this.session.answers = this.session.answers || {};
@@ -306,9 +319,10 @@ class PracticeSession {
 
         // Highlight options
         const options = document.querySelectorAll('.option');
+        const correctAnswerNormalized = (correctAnswer || '').trim().toUpperCase();
         options.forEach(opt => {
             const input = opt.querySelector('input');
-            if (input.value === correctAnswer) {
+            if (input.value.trim().toUpperCase() === correctAnswerNormalized) {
                 opt.classList.add('correct-option');
             } else if (input.checked && !isCorrect) {
                 opt.classList.add('incorrect-option');

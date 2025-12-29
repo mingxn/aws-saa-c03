@@ -9,7 +9,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const revealBtn = document.getElementById('reveal-btn');
     const result = document.getElementById('result');
     const question = document.querySelector('.question');
-    const correctAnswer = question.dataset.answer;
+
+    // Strip surrounding quotes from answer (handles double-encoding issue)
+    let answerValue = (question.dataset.answer || '').trim();
+    if (answerValue.startsWith('"') && answerValue.endsWith('"')) {
+        answerValue = answerValue.slice(1, -1);
+    }
+    const correctAnswer = answerValue;
 
     // Submit answer
     if (submitBtn) {
@@ -22,8 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            const userAnswer = selected.value;
-            const isCorrect = userAnswer === correctAnswer;
+            const userAnswer = selected.value.trim().toUpperCase();
+            const isCorrect = userAnswer === (correctAnswer || '').trim().toUpperCase();
 
             // Show result
             result.style.display = 'block';
@@ -43,12 +49,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Highlight correct/incorrect options
             const options = form.querySelectorAll('.option');
+            const correctAnswerNormalized = (correctAnswer || '').trim().toUpperCase();
             options.forEach(option => {
                 const input = option.querySelector('input');
-                if (input.value === correctAnswer) {
+                if (input.value.trim().toUpperCase() === correctAnswerNormalized) {
                     option.classList.add('correct-option');
                 }
-                if (input.checked && input.value !== correctAnswer) {
+                if (input.checked && input.value.trim().toUpperCase() !== correctAnswerNormalized) {
                     option.classList.add('incorrect-option');
                 }
             });
@@ -71,9 +78,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Highlight correct option
             const options = form.querySelectorAll('.option');
+            const correctAnswerNormalized = (correctAnswer || '').trim().toUpperCase();
             options.forEach(option => {
                 const input = option.querySelector('input');
-                if (input.value === correctAnswer) {
+                if (input.value.trim().toUpperCase() === correctAnswerNormalized) {
                     option.classList.add('correct-option');
                 }
             });
