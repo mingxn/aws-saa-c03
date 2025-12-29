@@ -2,7 +2,6 @@
 <div class="container question-page">
     <article class="question" data-answer="{{ .Params.answer }}">
         <header>
-            <h1>{{ .Title }}</h1>
             {{ with .Params.categories }}
             <div class="tags">
                 {{ range . }}

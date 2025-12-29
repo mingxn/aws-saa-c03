@@ -5,7 +5,7 @@
     <div class="question-list">
         {{ range .Pages }}
         <article class="question-item">
-            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <h3><a href="{{ .RelPermalink }}">{{ .Params.question | truncate 100 }}</a></h3>
             {{ with .Params.categories }}
             <div class="tags">
                 {{ range . }}

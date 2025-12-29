@@ -20,7 +20,7 @@
     </section>
 
     <section class="stats">
-        <p>Total Questions: {{ len (where .Site.RegularPages "Section" "questions") }}</p>
+        <p>Total Questions: {{ len (where .Site.AllPages "Section" "questions") }}</p>
     </section>
 </div>
 {{ end }}
