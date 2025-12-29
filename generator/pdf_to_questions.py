@@ -436,8 +436,10 @@ def main():
         print("You may need to adjust the parsing logic in parse_question_block()")
         sys.exit(1)
 
-    # Create output directory
-    output_dir = Path("content/questions")
+    # Create output directory (relative to project root, not script location)
+    script_dir = Path(__file__).parent
+    project_root = script_dir.parent
+    output_dir = project_root / "content" / "questions"
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Generate Hugo markdown files

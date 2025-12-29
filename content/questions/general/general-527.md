@@ -1,0 +1,20 @@
+---
+title: "A data analytics company wants to migrate its batch processi..."
+draft: false
+categories:
+  - General
+domain: "Design High-Performing Architectures"
+difficulty: "medium"
+question: "A data analytics company wants to migrate its batch processing system to AWS. The company receives thousands of small data files periodically during the day through FTP. An on-premises batch job processes the data files overnight. However, the batch job takes hours to nish running. The company wants the AWS solution to process incoming data files as soon as possible with minimal changes to the FTP clients that send the les. The solution must delete the incoming data files after the files have been processed successfully. Processing for each file needs to take 3-8 minutes. Which solution will fulfill these requirements in the MOST operationally ecient way?"
+options:
+  A: "Use an Amazon EC2 instance that runs an FTP server to store incoming files as objects in Amazon S3 Glacier Flexible Retrieval. Configure a job queue in AWS Batch. Use Amazon EventBridge rules to invoke the job to process the objects nightly from S3 Glacier Flexible Retrieval. Delete the objects after the job has processed the objects."
+  B: "Use an Amazon EC2 instance that runs an FTP server to store incoming files on an Amazon Elastic Block Store (Amazon EBS) volume. Configure a job queue in AWS Batch. Use Amazon EventBridge rules to invoke the job to process the files nightly from the EBS volume. Delete the files after the job has processed the files."
+  C: "Use AWS Transfer Family to create an FTP server to store incoming files on an Amazon Elastic Block Store (Amazon EBS) volume. Configure a job queue in AWS Batch. Use an Amazon S3 event notification when each file arrives to invoke the job in AWS Batch. Delete the les after the job has processed the files."
+  D: "Use AWS Transfer Family to create an FTP server to store incoming files in Amazon S3 Standard. Create an AWS Lambda function to process the files and to delete the files after they are processed. Use an S3 event notification to invoke the Lambda function when the les arrive."
+answer: "A"
+explanation: ""
+tags:
+  - general
+---
+
+<!-- Question data is in frontmatter -->

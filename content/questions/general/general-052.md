@@ -1,0 +1,20 @@
+---
+title: "A company wants to migrate its on-premises application to AW..."
+draft: false
+categories:
+  - General
+domain: "Design High-Performing Architectures"
+difficulty: "medium"
+question: "A company wants to migrate its on-premises application to AWS. The application produces output files that vary in size from tens of gigabytes to hundreds of terabytes. The application data must be stored in a standard file system structure. The company wants a solution that scales automatically. is highly available, and requires minimum operational overhead. Which solution will fulfill these requirements?"
+options:
+  A: "Migrate the application to run as containers on Amazon Elastic Container Service (Amazon ECS). Use Amazon S3 for storage."
+  B: "Migrate the application to run as containers on Amazon Elastic Kubernetes Service (Amazon EKS). Use Amazon Elastic Block Store (Amazon EBS) for storage."
+  C: "Migrate the application to Amazon EC2 instances in a Multi-AZ Auto Scaling group. Use Amazon Elastic File System (Amazon EFS) for storage."
+  D: "Migrate the application to Amazon EC2 instances in a Multi-AZ Auto Scaling group. Use Amazon Elastic Block Store (Amazon EBS) for storage."
+answer: ""
+explanation: ""
+tags:
+  - general
+---
+
+<!-- Question data is in frontmatter -->

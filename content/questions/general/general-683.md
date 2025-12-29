@@ -1,0 +1,20 @@
+---
+title: "A company wants to migrate its web applications from on prem..."
+draft: false
+categories:
+  - General
+domain: "Design High-Performing Architectures"
+difficulty: "medium"
+question: "A company wants to migrate its web applications from on premises to AWS. The company is located close to the eu-central-1 Region. Because of regulations, the company cannot launch some of its applications in eu-central-1. The company wants to achieve single-digit millisecond latency. Which solution will fulfill these requirements?"
+options:
+  A: "Deploy the applications in eu-central-1. Extend the company’s VPC from eu-central-1 to an edge location in Amazon CloudFront."
+  B: "Deploy the applications in AWS Local Zones by extending the company's VPC from eu-central-1 to the chosen Local Zone."
+  C: "Deploy the applications in eu-central-1. Extend the company’s VPC from eu-central-1 to the regional edge caches in Amazon CloudFront."
+  D: "Deploy the applications in AWS Wavelength Zones by extending the company’s VPC from eu-central-1 to the chosen Wavelength Zone."
+answer: "A"
+explanation: ""
+tags:
+  - general
+---
+
+<!-- Question data is in frontmatter -->

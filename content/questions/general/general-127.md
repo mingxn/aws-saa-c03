@@ -1,0 +1,20 @@
+---
+title: "A media company is evaluating the possibility of moving its ..."
+draft: false
+categories:
+  - General
+domain: "Design High-Performing Architectures"
+difficulty: "medium"
+question: "A media company is evaluating the possibility of moving its systems to the AWS Cloud. The company needs at least 10 TB of storage with the maximum possible I/O performance for video processing, 300 TB of very durable storage for storing media content, and 900 TB of storage to fulfill requirements for archival media that is not in use anymore. Which set of services should a solutions architect recommend to fulfill these requirements?"
+options:
+  A: "Amazon EBS for maximum performance, Amazon S3 for durable data storage, and Amazon S3 Glacier for archival storage"
+  B: "Amazon EBS for maximum performance, Amazon EFS for durable data storage, and Amazon S3 Glacier for archival storage"
+  C: "Amazon EC2 instance store for maximum performance, Amazon EFS for durable data storage, and Amazon S3 for archival storage"
+  D: "Amazon EC2 instance store for maximum performance, Amazon S3 for durable data storage, and Amazon S3 Glacier for archival storage"
+answer: ""
+explanation: ""
+tags:
+  - general
+---
+
+<!-- Question data is in frontmatter -->

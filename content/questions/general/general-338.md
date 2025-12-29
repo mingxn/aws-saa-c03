@@ -1,0 +1,20 @@
+---
+title: "A solutions architect must create a disaster recovery (DR) p..."
+draft: false
+categories:
+  - General
+domain: "Design Cost-Optimized Architectures"
+difficulty: "medium"
+question: "A solutions architect must create a disaster recovery (DR) plan for a high-volume software as a service (SaaS) platform. All data for the platform is stored in an Amazon Aurora MySQL DB cluster. The DR plan must replicate data to a secondary AWS Region. Which solution will fulfill these requirements MOST cost-effectively?"
+options:
+  A: "Use MySQL binary log replication to an Aurora cluster in the secondary Region. Provision one DB instance for the Aurora cluster in the secondary Region."
+  B: "Set up an Aurora global database for the DB cluster. When setup is complete, remove the DB instance from the secondary Region."
+  C: "Use AWS Database Migration Service (AWS DMS) to continuously replicate data to an Aurora cluster in the secondary Region. Remove the DB instance from the secondary Region."
+  D: "Set up an Aurora global database for the DB cluster. Specify a minimum of one DB instance in the secondary Region."
+answer: "A"
+explanation: ""
+tags:
+  - general
+---
+
+<!-- Question data is in frontmatter -->

@@ -1,0 +1,22 @@
+---
+title: "A global video streaming company uses Amazon CloudFront as a..."
+draft: false
+categories:
+  - CloudFront
+  - Networking
+domain: "Design High-Performing Architectures"
+difficulty: "medium"
+question: "A global video streaming company uses Amazon CloudFront as a content distribution network (CDN). The company wants to roll out content in a phased manner across multiple countries. The company needs to ensure that viewers who are outside the countries to which the company rolls out content are not able to view the content. Which solution will fulfill these requirements?"
+options:
+  A: "Add geographic restrictions to the content in CloudFront by using an allow list. Set up a custom error message."
+  B: "Set up a new URL tor restricted content. Authorize access by using a signed URL and cookies. Set up a custom error message."
+  C: "Encrypt the data for the content that the company distributes. Set up a custom error message."
+  D: "Create a new URL for restricted content. Set up a time-restricted access policy for signed URLs."
+answer: "A"
+explanation: ""
+tags:
+  - cloudfront
+  - networking
+---
+
+<!-- Question data is in frontmatter -->

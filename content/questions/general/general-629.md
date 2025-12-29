@@ -1,0 +1,20 @@
+---
+title: "A solutions architect is creating a data processing job that..."
+draft: false
+categories:
+  - General
+domain: "Design Cost-Optimized Architectures"
+difficulty: "medium"
+question: "A solutions architect is creating a data processing job that runs once daily and can take up to 2 hours to complete. If the job is interrupted, it has to restart from the beginning. How should the solutions architect address this issue in the MOST cost-effective manner?"
+options:
+  A: "Create a script that runs locally on an Amazon EC2 Reserved Instance that is triggered by a cron job."
+  B: "Create an AWS Lambda function triggered by an Amazon EventBridge scheduled event."
+  C: "Use an Amazon Elastic Container Service (Amazon ECS) Fargate task triggered by an Amazon EventBridge scheduled event."
+  D: "Use an Amazon Elastic Container Service (Amazon ECS) task running on Amazon EC2 triggered by an Amazon EventBridge scheduled event."
+answer: "A"
+explanation: ""
+tags:
+  - general
+---
+
+<!-- Question data is in frontmatter -->

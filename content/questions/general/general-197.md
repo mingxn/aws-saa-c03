@@ -1,0 +1,20 @@
+---
+title: "A company has a Microsoft .NET application that runs on an o..."
+draft: false
+categories:
+  - General
+domain: "Design High-Performing Architectures"
+difficulty: "medium"
+question: "A company has a Microsoft .NET application that runs on an on-premises Windows Server. The application stores data by using an Oracle Database Standard Edition server. The company is planning a migration to AWS and wants to minimize development changes while moving the application. The AWS application environment should be highly available. Which combination of actions should the company take to fulfill these requirements? (Choose two.)"
+options:
+  A: "Refactor the application as serverless with AWS Lambda functions running .NET Core."
+  B: "Rehost the application in AWS Elastic Beanstalk with the .NET platform in a Multi-AZ deployment."
+  C: "Replatform the application to run on Amazon EC2 with the Amazon Linux Amazon Machine Image (AMI)."
+  D: "Use AWS Database Migration Service (AWS DMS) to migrate from the Oracle database to Amazon DynamoDB in a Multi-AZ deployment. E. Use AWS Database Migration Service (AWS DMS) to migrate from the Oracle database to Oracle on Amazon RDS in a Multi-AZ deployment."
+answer: ""
+explanation: ""
+tags:
+  - general
+---
+
+<!-- Question data is in frontmatter -->

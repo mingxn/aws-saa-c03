@@ -1,0 +1,20 @@
+---
+title: "A company stores data in an Amazon Aurora PostgreSQL DB clus..."
+draft: false
+categories:
+  - General
+domain: "Design Resilient Architectures"
+difficulty: "medium"
+question: "A company stores data in an Amazon Aurora PostgreSQL DB cluster. The company must store all the data for 5 years and must delete all the data after 5 years. The company also must indenitely keep audit logs of actions that are performed within the database. Currently, the company has automated backups configured for Aurora. Which combination of steps should a solutions architect take to fulfill these requirements? (Choose two.)"
+options:
+  A: "Take a manual snapshot of the DB cluster."
+  B: "Create a lifecycle policy for the automated backups."
+  C: "Configure automated backup retention for 5 years."
+  D: "Configure an Amazon CloudWatch Logs export for the DB cluster. E. Use AWS Backup to take the backups and to keep the backups for 5 years."
+answer: ""
+explanation: ""
+tags:
+  - general
+---
+
+<!-- Question data is in frontmatter -->

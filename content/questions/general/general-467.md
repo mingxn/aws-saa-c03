@@ -1,0 +1,20 @@
+---
+title: "A company uses AWS Organizations. A member account has purch..."
+draft: false
+categories:
+  - General
+domain: "Design High-Performing Architectures"
+difficulty: "medium"
+question: "A company uses AWS Organizations. A member account has purchased a Compute Savings Plan. Because of changes in the workloads inside the member account, the account no longer receives the full benefit of the Compute Savings Plan commitment. The company uses less than 50% of its purchased compute power."
+options:
+  A: "Turn on discount sharing from the Billing Preferences section of the account console in the member account that purchased the Compute Savings Plan."
+  B: "Turn on discount sharing from the Billing Preferences section of the account console in the company's Organizations management account."
+  C: "Migrate additional compute workloads from another AWS account to the account that has the Compute Savings Plan."
+  D: "Sell the excess Savings Plan commitment in the Reserved Instance Marketplace."
+answer: "A"
+explanation: ""
+tags:
+  - general
+---
+
+<!-- Question data is in frontmatter -->

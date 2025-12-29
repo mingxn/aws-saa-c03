@@ -1,0 +1,20 @@
+---
+title: "A company is developing an application that provides order s..."
+draft: false
+categories:
+  - General
+domain: "Design High-Performing Architectures"
+difficulty: "medium"
+question: "A company is developing an application that provides order shipping statistics for retrieval by a REST API. The company wants to extraffict the shipping statistics, organize the data into an easy-to-read HTML format, and send the report to several email addresses at the same time every morning. Which combination of steps should a solutions architect take to fulfill these requirements? (Choose two.)"
+options:
+  A: "Configure the application to send the data to Amazon Kinesis Data Firehose."
+  B: "Use Amazon Simple Email Service (Amazon SES) to format the data and to send the report by email."
+  C: "Create an Amazon EventBridge (Amazon CloudWatch Events) scheduled event that invokes an AWS Glue job to query the application's API for the data."
+  D: "Create an Amazon EventBridge (Amazon CloudWatch Events) scheduled event that invokes an AWS Lambda function to query the application's API for the data. E. Store the application data in Amazon S3. Create an Amazon Simple Notification Service (Amazon SNS) topic as an S3 event destination to send the report by email."
+answer: ""
+explanation: ""
+tags:
+  - general
+---
+
+<!-- Question data is in frontmatter -->

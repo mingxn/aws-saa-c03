@@ -1,0 +1,20 @@
+---
+title: "A company wants to use the AWS Cloud to improve its on-premi..."
+draft: false
+categories:
+  - General
+domain: "Design Cost-Optimized Architectures"
+difficulty: "medium"
+question: "A company wants to use the AWS Cloud to improve its on-premises disaster recovery (DR) conguration. The company's core production business application uses Microsoft SQL Server Standard, which runs on a virtual machine (VM). The application has a recovery point objective (RPO) of 30 seconds or fewer and a recovery time objective (RTO) of 60 minutes. The DR solution needs to minimize costs wherever possible. Which solution will fulfill these requirements?"
+options:
+  A: "Configure a multi-site active/active setup between the on-premises server and AWS by using Microsoft SQL Server Enterprise with Always On availability groups."
+  B: "Configure a warm standby Amazon RDS for SQL Server database on AWS. Configure AWS Database Migration Service (AWS DMS) to use change data capture (CDC)."
+  C: "Use AWS Elastic Disaster Recovery configured to replicate disk changes to AWS as a pilot light."
+  D: "Use third-party backup software to capture backups every night. Store a secondary set of backups in Amazon S3."
+answer: "A"
+explanation: ""
+tags:
+  - general
+---
+
+<!-- Question data is in frontmatter -->

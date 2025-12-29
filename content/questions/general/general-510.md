@@ -1,0 +1,20 @@
+---
+title: "A company is developing software that uses a PostgreSQL data..."
+draft: false
+categories:
+  - General
+domain: "Design Cost-Optimized Architectures"
+difficulty: "medium"
+question: "A company is developing software that uses a PostgreSQL database schema. The company needs to configure multiple development environments and databases for the company's developers. On average, each development environment is used for half of the 8-hour workday. Which solution will fulfill these requirements MOST cost-effectively?"
+options:
+  A: "Configure each development environment with its own Amazon Aurora PostgreSQL database"
+  B: "Configure each development environment with its own Amazon RDS for PostgreSQL Single-AZ DB instances"
+  C: "Configure each development environment with its own Amazon Aurora On-Demand PostgreSQL-Compatible database"
+  D: "Configure each development environment with its own Amazon S3 bucket by using Amazon S3 Object Select"
+answer: "A"
+explanation: ""
+tags:
+  - general
+---
+
+<!-- Question data is in frontmatter -->

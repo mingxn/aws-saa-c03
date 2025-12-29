@@ -1,0 +1,20 @@
+---
+title: "A company is migrating an old application to AWS. The applic..."
+draft: false
+categories:
+  - General
+domain: "Design High-Performing Architectures"
+difficulty: "medium"
+question: "A company is migrating an old application to AWS. The application runs a batch job every hour and is CPU intensive. The batch job takes 15 minutes on average with an on-premises server. The server has 64 virtual CPU (vCPU) and 512 GiB of memory. Which solution will run the batch job within 15 minutes with the LEAST operational overhead?"
+options:
+  A: "Use AWS Lambda with functional scaling."
+  B: "Use Amazon Elastic Container Service (Amazon ECS) with AWS Fargate."
+  C: "Use Amazon Lightsail with AWS Auto Scaling."
+  D: "Use AWS Batch on Amazon EC2."
+answer: "A"
+explanation: ""
+tags:
+  - general
+---
+
+<!-- Question data is in frontmatter -->
