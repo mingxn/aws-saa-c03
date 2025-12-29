@@ -12,8 +12,8 @@ options:
   B: "An AWS Lambda function"
   C: "A containerized service hosted in Amazon Elastic Kubernetes Service (Amazon EKS)"
   D: "A containerized service hosted in Amazon ECS with Amazon EC2"
-answer: "A"
-explanation: ""
+answer: "B"
+explanation: "AWS Lambda supports asynchronous invocation, which is suitable for scenarios where data processing can take place independently of the API request and complete within a few seconds. This aligns with the requirement of processing data asynchronously."
 tags:
   - api gateway
   - networking

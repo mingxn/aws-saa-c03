@@ -11,7 +11,7 @@ options:
   B: "Use the AWS Load Balancer Controller to provision an Application Load Balancer."
   C: "Use an AWS Lambda function to connect the requests to Amazon EKS."
   D: "Use Amazon API Gateway to connect the requests to Amazon EKS."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

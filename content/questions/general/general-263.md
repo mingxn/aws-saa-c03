@@ -12,7 +12,7 @@ options:
   C: "Deploy an Amazon Elastic Container Service (Amazon ECS) service with an Amazon EC2 launch type. Specify a desired task number level of greater than or equal to 2."
   D: "Deploy an Amazon Elastic Container Service (Amazon ECS) service with a Fargate launch type. Specify a desired task number level of greater than or equal to 2. E. Deploy Kubernetes worker nodes on Amazon EC2 instances that span multiple Availability Zones. Create a deployment that species two or more replicas for each microservice."
 answer: "A"
-explanation: ""
+explanation: "D. Deploy an Amazon Elastic Container Service (Amazon ECS) service with a Fargate launch type. Specify a desired task number level of greater than or equal to 2.  An ECS cluster is necessary to organize and manage your Fargate tasks and services. It provides a logical grouping of tasks and services. When using Fargate, you don't need to manage the underlying EC2 instances; the cluster helps manage the Fargate tasks.  Fargate is a serverless compute engine for containers that eliminates the need to manage underlying infrastructure. With Fargate, you do not need to provision or manage EC2 instances; AWS takes care of the infrastructure, allowing you to focus solely on your containers."
 tags:
   - general
 ---

@@ -12,7 +12,7 @@ options:
   C: "Set up an SFTP server on Amazon EC2."
   D: "Use AWS Database Migration Service (AWS DMS)."
 answer: "A"
-explanation: ""
+explanation: "If we want to transfer large amount of data we can used AWS Datasync."
 tags:
   - general
 ---

@@ -11,7 +11,7 @@ options:
   B: "Configure an Elastic Beanstalk environment to use compute optimized instances. Configure the environment to scale based on requests."
   C: "Configure an Elastic Beanstalk environment to use compute optimized instances. Configure the environment to scale on a schedule."
   D: "Configure an Elastic Beanstalk environment to use burstable performance instances in unlimited mode. Configure the environment to scale on predictive metrics."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

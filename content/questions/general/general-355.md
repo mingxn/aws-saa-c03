@@ -11,8 +11,8 @@ options:
   B: "Use Amazon Elastic Container Service (Amazon ECS) with AWS Fargate."
   C: "Use Amazon Lightsail with AWS Auto Scaling."
   D: "Use AWS Batch on Amazon EC2."
-answer: "A"
-explanation: ""
+answer: "D"
+explanation: "AWS Batch on Amazon EC2: AWS Batch is a fully managed service for batch computing that dynamically provisions the optimal quantity and type of compute resources (Amazon EC2 instances) based on the volume and specific resource requirements of the batch jobs. If the batch job is CPU-intensive and can be parallelized, AWS Batch can efficiently manage the compute resources needed for the job, and it provides a higher level of control over the environment compared to serverless options like AWS Lambda."
 tags:
   - general
 ---

@@ -11,7 +11,7 @@ options:
   B: "Use Amazon Lex to create the written sentiment analysis reports."
   C: "Use Amazon Polly to convert the audio recordings into text."
   D: "Use Amazon Transcribe to convert the audio recordings in any language into text. E. Use Amazon Translate to translate text in any language to English. F. Use Amazon Comprehend to create the sentiment analysis reports."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

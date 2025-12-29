@@ -11,8 +11,8 @@ options:
   B: "Create an AWS Storage Gateway file gateway. Create a file share that uses the required client protocol. Connect the application server to the le share."
   C: "Create an Amazon Elastic File System (Amazon EFS) file system, and configure it to support Lustre. Attach the file system to the origin server. Connect the application server to the file system."
   D: "Create an Amazon FSx for Lustre file system. Attach the file system to the origin server. Connect the application server to the file system."
-answer: "A"
-explanation: ""
+answer: "D"
+explanation: "Amazon FSx for Lustre: Amazon FSx for Lustre is a fully managed service that provides high-performance shared storage. It is specifically designed to be used with Lustre, making it a suitable solution for Lustre clients.  Fully Managed: Amazon FSx for Lustre is a fully managed service, meaning that AWS takes care of maintenance, updates, and other operational tasks, reducing the management overhead for the company."
 tags:
   - general
 ---

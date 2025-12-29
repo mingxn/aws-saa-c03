@@ -11,8 +11,8 @@ options:
   B: "Assign a tag with a Restrict tag key and a Compliance tag value. Map the Active Directory groups to IAM groups to restrict access."
   C: "Create an IAM service-linked role that is linked directly to FSx for Windows File Server to restrict access."
   D: "Join the file system to the Active Directory to restrict access."
-answer: "A"
-explanation: ""
+answer: "D"
+explanation: "Join the File System to Active Directory:  By joining the FSx for Windows File Server file system to the on-premises Active Directory, you extend the trust relationship to AWS. This ensures that access control is based on the on-premises Active Directory groups, allowing you to continue using the existing groups to restrict access to shares, folders, and files. After joining the file system to Active Directory, you can manage access controls using the existing Active Directory groups. Users and groups from the on-premises Active Directory can be granted appropriate permissions on the FSx file system."
 tags:
   - general
 ---

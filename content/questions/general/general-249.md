@@ -11,7 +11,7 @@ options:
   B: "Create an AWS Storage Gateway tape gateway. Configure tapes to use Amazon S3. Connect the application server to the tape gateway."
   C: "Create an Amazon EC2 Windows instance. Install and configure a Windows file share role on the instance. Connect the application server to the file share."
   D: "Create an Amazon FSx for Windows File Server file system. Attach the file system to the origin server. Connect the application server to the le system."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

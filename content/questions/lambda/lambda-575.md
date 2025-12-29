@@ -12,7 +12,7 @@ options:
   B: "Regional endpoint"
   C: "Interface VPC endpoint"
   D: "Edge-optimized endpoint"
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - lambda

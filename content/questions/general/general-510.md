@@ -11,7 +11,7 @@ options:
   B: "Configure each development environment with its own Amazon RDS for PostgreSQL Single-AZ DB instances"
   C: "Configure each development environment with its own Amazon Aurora On-Demand PostgreSQL-Compatible database"
   D: "Configure each development environment with its own Amazon S3 bucket by using Amazon S3 Object Select"
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

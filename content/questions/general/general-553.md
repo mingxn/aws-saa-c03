@@ -11,7 +11,7 @@ options:
   B: "Use the storage optimized instance family for both the application and the database."
   C: "Use the memory optimized instance family for both the application and the database."
   D: "Use the high performance computing (HPC) optimized instance family for the application. Use the memory optimized instance family for the database."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

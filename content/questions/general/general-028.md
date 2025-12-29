@@ -12,7 +12,7 @@ options:
   C: "Use AWS Directory Service. Create a two-way trust relationship with the company's self-managed Microsoft Active Directory."
   D: "Deploy an identity provider (IdP) on premises. Enable AWS Single Sign-On (AWS SSO) from the AWS SSO console."
 answer: "A"
-explanation: ""
+explanation: "****************************************************************************"
 tags:
   - general
 ---

@@ -11,7 +11,7 @@ options:
   B: "Use an AWS Key Management Service (AWS KMS) external key store backed by an external key manager."
   C: "Use the default AWS Key Management Service (AWS KMS) managed key store."
   D: "Use a custom key store backed by an AWS CloudHSM cluster."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

@@ -11,7 +11,7 @@ options:
   B: "Enable secrets encryption in the EKS cluster by using AWS Key Management Service (AWS KMS)."
   C: "Implement an AWS Lambda function to encrypt the information by using AWS Key Management Service (AWS KMS)."
   D: "Use AWS Systems Manager Parameter Store to encrypt the information by using AWS Key Management Service (AWS KMS)."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

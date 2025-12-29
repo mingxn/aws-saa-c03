@@ -11,7 +11,7 @@ options:
   B: "Run AWS App Mesh in the existing EKS cluster. View the metrics and logs in the App Mesh console."
   C: "Configure AWS CloudTrail to capture data events. Query CloudTrail by using Amazon OpenSearch Service."
   D: "Configure Amazon CloudWatch Container Insights in the existing EKS cluster. View the metrics and logs in the CloudWatch console."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

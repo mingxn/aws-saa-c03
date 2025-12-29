@@ -12,7 +12,7 @@ options:
   B: "Choose provisioned mode. Update the read and write capacity units appropriately."
   C: "Purchase DynamoDB reserved capacity for a 1-year term."
   D: "Purchase DynamoDB reserved capacity for a 3-year term."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - dynamodb

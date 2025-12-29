@@ -11,8 +11,8 @@ options:
   B: "AWS Storage Gateway Tape Gateway"
   C: "AWS Storage Gateway Volume Gateway stored volumes"
   D: "AWS Storage Gateway Volume Gateway cached volumes"
-answer: "A"
-explanation: ""
+answer: "D"
+explanation: "AWS Storage Gateway provides a hybrid cloud storage service that enables on-premises applications to use cloud storage seamlessly. Volume Gateway offers two modes: cached volumes and stored volumes. In the cached volumes mode, the entire dataset is stored in Amazon S3, and the most frequently accessed data is cached on-premises. This allows the company to keep recently accessed data locally, minimizing the need for on-premises scaling."
 tags:
   - general
 ---

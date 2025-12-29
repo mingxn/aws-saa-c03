@@ -11,7 +11,7 @@ options:
   B: "Use Amazon FSx for Lustre persistent file systems."
   C: "Use Amazon Elastic File System (Amazon EFS) with Bursting Throughput mode."
   D: "Use Amazon Elastic File System (Amazon EFS) with Provisioned Throughput mode."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

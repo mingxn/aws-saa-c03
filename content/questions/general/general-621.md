@@ -11,7 +11,7 @@ options:
   B: "Deploy Amazon Aurora as the database solution. Choose the serverless DB engine mode."
   C: "Deploy Amazon DynamoDB as the database solution. Ensure that DynamoDB auto scaling is enabled."
   D: "Deploy the static content into an Amazon S3 bucket. Provision an Amazon CloudFront distribution with the S3 bucket as the origin. E. Deploy the web servers for static content across a fleet of Amazon EC2 instances in Auto Scaling groups. Configure the instances to periodically refresh the content from an Amazon Elastic File System (Amazon EFS) volume."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

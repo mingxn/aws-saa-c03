@@ -11,7 +11,7 @@ options:
   B: "Use Amazon Cognito with an Active Directory user pool. Create roles with the appropriate policies attached."
   C: "Dene cross-account roles with the appropriate policies attached. Map the roles to the Active Directory groups."
   D: "Configure Security Assertion Markup Language (SAML) 2 0-based federation. Create roles with the appropriate policies attached Map the roles to the Active Directory groups."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

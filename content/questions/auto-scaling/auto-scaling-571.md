@@ -12,7 +12,7 @@ options:
   B: "Provision an Amazon Aurora database with a minimum capacity of 1 Aurora capacity unit (ACU)."
   C: "Provision an Amazon Aurora Serverless v2 database with a minimum capacity of 1 Aurora capacity unit (ACU)."
   D: "Provision an Amazon RDS for MySQL database with 2 GiB of memory."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - autoscaling

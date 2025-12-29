@@ -11,7 +11,7 @@ options:
   B: "Use Amazon API Gateway and AWS Lambda functions with provisioned concurrency."
   C: "Use an Application Load Balancer and an Amazon Elastic Kubernetes Service (Amazon EKS) cluster."
   D: "Use Amazon API Gateway and AWS Lambda functions with reserved concurrency."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

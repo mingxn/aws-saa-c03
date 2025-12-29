@@ -13,7 +13,7 @@ options:
   C: "Use the AWS SDK to develop a script that creates an on-demand backup of the DynamoDB table. Set up an Amazon EventBridge rule that runs the script on the first day of each month. Create a second script that will run on the second day of each month to transition DynamoDB backups that are older than 6 months to cold storage and to delete backups that are older than 7 years."
   D: "Use the AWS CLI to create an on-demand backup of the DynamoDB table. Set up an Amazon EventBridge rule that runs the command on the rst day of each month with a cron expression. Specify in the command to transition the backups to cold storage after 6 months and to delete the backups after 7 years."
 answer: "A"
-explanation: ""
+explanation: "AWS Backup will automatically take full backups of the DynamoDB table on the schedule defined in the backup plan (the first of each month). The lifecycle policy can transition backups to cold storage after 6 months, fulfilling that requirement. Setting a 7-year retention period in the backup plan will ensure each backup is retained for 7 years as required. AWS Backup manages the backup jobs and lifecycle policies, requiring no custom scripting or management."
 tags:
   - dynamodb
   - database

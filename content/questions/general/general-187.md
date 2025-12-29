@@ -12,7 +12,7 @@ options:
   C: "Create an Amazon EC2 instance-based Docker cluster to handle the dynamic application load."
   D: "Create an Amazon Elastic Container Service (Amazon ECS) cluster with a Fargate launch type to handle the dynamic application load. E. Create an Amazon Elastic Container Service (Amazon ECS) cluster with an Amazon EC2 launch type to handle the dynamic application load."
 answer: "A"
-explanation: ""
+explanation: "D. Create an Amazon Elastic Container Service (Amazon ECS) cluster with a Fargate launch type to handle the dynamic application load."
 tags:
   - general
 ---

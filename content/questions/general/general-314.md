@@ -11,8 +11,8 @@ options:
   B: "Amazon Aurora Serverless for MySQL"
   C: "Amazon Redshift Spectrum"
   D: "Amazon RDS for MySQL"
-answer: "A"
-explanation: ""
+answer: "B"
+explanation: "Amazon Aurora Serverless: Aurora Serverless is a fully managed, on-demand, and auto-scaling relational database engine provided by AWS. It is suitable for infrequent access patterns and allows the database to automatically start up, shut down, and scale capacity based on actual usage."
 tags:
   - general
 ---

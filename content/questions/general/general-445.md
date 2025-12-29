@@ -12,7 +12,7 @@ options:
   C: "Use rsync to copy the data directly from local storage to a designated Amazon S3 bucket over the Direct Connect connection."
   D: "Back up the data on tapes. Ship the tapes to an AWS data center. Mount a target Amazon S3 bucket on the on-premises file system."
 answer: "A"
-explanation: ""
+explanation: "using AWS DataSync, which is designed for efficiently transferring large amounts of data between on-premises storage and Amazon S3. It allows you to create data transfer tasks and initiate the transfer to an Amazon S3 bucket."
 tags:
   - general
 ---

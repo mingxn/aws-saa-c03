@@ -11,7 +11,7 @@ options:
   B: "Migrate to Microsoft SQL Server on Amazon EC2. Use Always On read replicas for reporting purposes"
   C: "Migrate to Amazon DynamoDB. Use DynamoDB on-demand replicas for reporting purposes"
   D: "Migrate to Amazon Aurora MySQL. Use Aurora read replicas for reporting purposes"
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

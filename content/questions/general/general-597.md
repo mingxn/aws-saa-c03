@@ -11,7 +11,7 @@ options:
   B: "Deploy an AWS Storage Gateway on premises in Amazon FSx File Gateway made."
   C: "Set up an AWS Glue crawler to create a table based on the data that is in Amazon S3."
   D: "Set up an Amazon EMR cluster with EMR File System (EMRFS) to query the data that is in Amazon S3. Provide access to analysts. E. Set up an Amazon Redshift cluster to query the data that is in Amazon S3. Provide access to analysts. F. Setup Amazon Athena to query the data that is in Amazon S3. Provide access to analysts."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

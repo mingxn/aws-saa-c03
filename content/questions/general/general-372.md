@@ -11,8 +11,8 @@ options:
   B: "Store the images in Amazon S3 buckets. Use Amazon DynamoDB with the geographic code as the key and the image S3 URL as the value."
   C: "Store the images and geographic codes in an Amazon DynamoDB table. Configure DynamoDB Accelerator (DAX) during times of high load."
   D: "Store the images in Amazon S3 buckets. Store geographic codes and image S3 URLs in a database table. Use Oracle running on an Amazon RDS Multi-AZ DB instance."
-answer: ""
-explanation: ""
+answer: "D"
+explanation: "In this we cannot used DynamoDB database bcz it is a NOSQL database and we want a SQL database bcz oracle database is SQL DATABASE thats why the correct ans is D. bcz used S3 bucket for storing data and used Oracle database for SQL we used Amazon RDS."
 tags:
   - general
 ---

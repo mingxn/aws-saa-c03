@@ -11,7 +11,7 @@ options:
   B: "Use Amazon Route 53 with a geolocation routing policy."
   C: "Create an Amazon CloudFront distribution that includes multiple origins."
   D: "Create an Application Load Balancer that uses path-based routing."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

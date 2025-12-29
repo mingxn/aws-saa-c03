@@ -331,16 +331,33 @@ def parse_answer_key(answer_key_path):
         question_num = int(parts[i])
         block = parts[i + 1]
 
-        # Extract answer text (after "ans-" or "ans -")
-        ans_match = re.search(r'ans[-\s]+(.+?)(?:\n\n|\nCorrect answer|General line|Keywords|Option|---)', block, re.IGNORECASE | re.DOTALL)
-        answer_text = ans_match.group(1).strip() if ans_match else ""
+        # Extract answer text - try "ans-" format first, then "[A-D]." format
+        ans_match = re.search(r'^ans[-\s]+(.+?)$', block, re.MULTILINE | re.IGNORECASE)
 
-        # Extract explanation (everything after answer until separator)
-        explanation_match = re.search(r'(?:ans-.+?\n\n)(.+?)(?=\d+\]|\Z)', block, re.DOTALL | re.IGNORECASE)
-        explanation = explanation_match.group(1).strip() if explanation_match else ""
+        if not ans_match:
+            # Try "[A-D]." or "[A-D] " format (most common)
+            ans_match = re.search(r'^([A-D])\.?\s+(.+?)$', block, re.MULTILINE)
 
-        # Clean up explanation (remove separator lines)
-        explanation = re.sub(r'-{5,}', '', explanation).strip()
+        if ans_match:
+            # Get answer text (group 1 for "ans-", group 2 for "[A-D].")
+            if len(ans_match.groups()) == 1:  # "ans-" format
+                answer_text = ans_match.group(1).strip()
+            else:  # "[A-D]." format
+                answer_text = ans_match.group(2).strip()
+
+            # Extract explanation: everything after the answer line until separator
+            answer_end_pos = ans_match.end()
+            rest_of_block = block[answer_end_pos:]
+
+            # Find separator (5+ dashes)
+            separator_match = re.search(r'-{5,}', rest_of_block)
+            if separator_match:
+                explanation = rest_of_block[:separator_match.start()].strip()
+            else:
+                explanation = rest_of_block.strip()
+        else:
+            answer_text = ""
+            explanation = ""
 
         answers[question_num] = {
             'answer_text': answer_text,

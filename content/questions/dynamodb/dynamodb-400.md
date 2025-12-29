@@ -12,8 +12,8 @@ options:
   B: "Have the current application publish a message to four Amazon Simple Notification Service (Amazon SNS) topics. Have each team subscribe to one topic."
   C: "Enable Amazon DynamoDB Streams on the table. Use triggers to write to a single Amazon Simple Notification Service (Amazon SNS) topic to which the teams can subscribe."
   D: "Add a custom attribute to each record to ag new items. Write a cron job that scans the table every minute for items that are new and noties an Amazon Simple Queue Service (Amazon SQS) queue to which the teams can subscribe."
-answer: "A"
-explanation: ""
+answer: "C"
+explanation: "Using a single SNS topic simplifies the notification process. The trigger can publish a message to this topic, and each internal team can subscribe to this topic. This reduces the operational overhead compared to managing multiple SNS topics (Option B)."
 tags:
   - dynamodb
   - database

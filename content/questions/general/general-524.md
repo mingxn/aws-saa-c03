@@ -11,7 +11,7 @@ options:
   B: "Access usage cost-related data by using downloadable AWS Cost Explorer report .csv files."
   C: "Configure AWS Budgets actions to send usage cost data to the company through FTP."
   D: "Create AWS Budgets reports for usage cost data. Send the data to the company through SMTP."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

@@ -11,7 +11,7 @@ options:
   B: "Use AWS Batch to create a job that uses AWS Fargate resources. Configure the job scheduling to run every 10 minutes."
   C: "Use Amazon Elastic Container Service (Amazon ECS) on AWS Fargate to run the job. Create a scheduled task based on the container image of the job to run every 10 minutes."
   D: "Use Amazon Elastic Container Service (Amazon ECS) on AWS Fargate to run the job. Create a standalone task based on the container image of the job. Use Windows task scheduler to run the job every 10 minutes."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

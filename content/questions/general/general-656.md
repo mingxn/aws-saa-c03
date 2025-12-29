@@ -11,7 +11,7 @@ options:
   B: "Create a VPC customer managed prex list that contains the list of CIDRs. Use AWS Resource Access Manager (AWS RAM) to share the prex list across the organization. Use the prex list in the security groups across the organization."
   C: "Create an AWS managed prex list. Use an AWS Security Hub policy to enforce the security group update across the organization. Use an AWS Lambda function to update the prex list automatically when the CIDR ranges change."
   D: "Create security groups in a central administrative AWS account. Create an AWS Firewall Manager common security group policy for the whole organization. Select the previously created security groups as primary groups in the policy."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

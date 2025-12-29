@@ -11,8 +11,8 @@ options:
   B: "Host the visualization tool in the same AWS Region as the data warehouse. Access it over the internet."
   C: "Host the visualization tool on premises and query the data warehouse directly over a Direct Connect connection at a location in the same AWS Region."
   D: "Host the visualization tool in the same AWS Region as the data warehouse and access it over a Direct Connect connection at a location in the same Region."
-answer: "A"
-explanation: ""
+answer: "D"
+explanation: "Hosting the visualization tool in the same AWS Region as the data warehouse and accessing it over a Direct Connect connection within the same Region minimizes data transfer costs. Since the data warehouse and the visualization tool are in the same Region, the data transfer between them doesn't incur the usual costs associated with data leaving the AWS network."
 tags:
   - general
 ---

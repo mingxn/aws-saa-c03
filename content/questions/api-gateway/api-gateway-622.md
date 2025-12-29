@@ -12,7 +12,7 @@ options:
   B: "Configure AWS WAF."
   C: "Set up API Gateway with an Amazon CloudFront distribution. Configure AWS Shield in CloudFront."
   D: "Set up API Gateway with an Amazon CloudFront distribution. Configure AWS WAF in CloudFront."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - api gateway

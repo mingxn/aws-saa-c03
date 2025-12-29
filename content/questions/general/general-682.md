@@ -11,7 +11,7 @@ options:
   B: "Migrate the database to Amazon EC2 instances in an Auto Scaling group behind a Network Load Balancer."
   C: "Migrate the database to an Amazon RDS Multi-AZ deployment."
   D: "Migrate the web tier to an AWS Lambda function. E. Migrate the database to an Amazon DynamoDB table."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

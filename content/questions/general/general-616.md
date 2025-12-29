@@ -11,7 +11,7 @@ options:
   B: "Create an Amazon Elastic File System (Amazon EFS) file system."
   C: "Create an Amazon S3 bucket to receive the data."
   D: "Manually use an operating system copy command to push the data into the AWS destination. E. Install an AWS DataSync agent in the on-premises data center. Use a DataSync task between the on-premises location and AWS."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

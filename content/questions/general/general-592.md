@@ -11,7 +11,7 @@ options:
   B: "Use Redis shards that contain multiple nodes with Redis append only files (AOF) turned on."
   C: "Use a Multi-AZ Redis cluster with more than one read replica in the replication group."
   D: "Use Redis shards that contain multiple nodes with Auto Scaling turned on."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

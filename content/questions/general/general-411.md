@@ -11,8 +11,8 @@ options:
   B: "Amazon RDS for MySQL"
   C: "MySQL-compatible Amazon Aurora Serverless"
   D: "MySQL deployed on Amazon EC2 in an Auto Scaling group"
-answer: "A"
-explanation: ""
+answer: "C"
+explanation: "Aurora Serverless is a serverless option for MySQL-compatible databases. It automatically adjusts the database capacity based on actual usage, making it suitable for sporadic usage patterns. It is MySQL-compatible, so it won't require significant database modifications."
 tags:
   - general
 ---

@@ -11,7 +11,7 @@ options:
   B: "Create two managed node groups. Provision one node group with On-Demand Instances. Provision the second node group with Spot Instances."
   C: "Create an Auto Scaling group that has a launch conguration that uses Spot Instances. Configure the user data to add the nodes to the EKS cluster."
   D: "Create a managed node group that contains only On-Demand Instances."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

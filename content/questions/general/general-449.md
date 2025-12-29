@@ -11,7 +11,7 @@ options:
   B: "Migrate the database to Amazon RDS Custom for Oracle. Customize the database settings to support third-party features."
   C: "Migrate the database to an Amazon EC2 Amazon Machine Image (AMI) for Oracle. Customize the database settings to support third-party features."
   D: "Migrate the database to Amazon RDS for PostgreSQL by rewriting the application code to remove dependency on Oracle APEX."
-answer: ""
+answer: "B"
 explanation: ""
 tags:
   - general

@@ -13,7 +13,7 @@ options:
   C: "Double the number of read capacity units for the new messages table in DynamoDB. Continue to use the existing DynamoDB endpoint."
   D: "Add an Amazon ElastiCache for Redis cache to the application stack. Update the application to point to the Redis cache endpoint instead of DynamoDB."
 answer: "A"
-explanation: ""
+explanation: "Amazon DynamoDB Accelerator (DAX) is an in-memory caching service for DynamoDB that helps improve the read performance of DynamoDB tables.A company hosts a website on Amazon EC2 instances behind an Application Load Balancer (ALB). The website serves static content. Website traffic is increasing, and the company is concerned about a potential increase in cost."
 tags:
   - dynamodb
   - database

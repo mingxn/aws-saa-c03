@@ -11,8 +11,8 @@ options:
   B: "Use Amazon AppFlow ows to transfer the data. Create an Amazon Elastic Container Service (Amazon ECS) task for IdP authentication."
   C: "Use AWS Transfer Family to transfer the data. Create an AWS Lambda function for IdP authentication."
   D: "Use AWS Storage Gateway to transfer the data. Create an Amazon Cognito identity pool for IdP authentication."
-answer: "A"
-explanation: ""
+answer: "C"
+explanation: "AWS Transfer Family (Option C): AWS Transfer Family is a fully managed service that allows you to transfer files over the internet using a range of protocols, including AS2. You can integrate AWS Transfer Family with your IdP for user authentication. By using a Lambda function, you can customize the authentication process and integrate it with your own IdP."
 tags:
   - general
 ---

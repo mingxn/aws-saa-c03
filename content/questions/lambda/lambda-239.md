@@ -13,7 +13,7 @@ options:
   C: "Create an Amazon CloudFront distribution. Deploy the function to Lambda@Edge. Integrate IAM authentication logic into the Lambda@Edge function."
   D: "Create an Amazon CloudFront distribution. Deploy the function to CloudFront Functions. Specify AWS_IAM as the authentication type."
 answer: "A"
-explanation: ""
+explanation: "This option is specifically designed for creating APIs and provides features such as authentication, request validation, and more. It allows you to create a REST API, configure a method to invoke the Lambda function, and enable IAM authentication. This provides a dedicated and managed API endpoint for clients to call securely."
 tags:
   - lambda
   - compute

@@ -11,7 +11,7 @@ options:
   B: "Use Amazon Neptune to store the information. Use Neptune Streams to process changes in the database."
   C: "Use Amazon Quantum Ledger Database (Amazon QLDB) to store the information. Use Amazon Kinesis Data Streams to process changes in the database."
   D: "Use Amazon Quantum Ledger Database (Amazon QLDB) to store the information. Use Neptune Streams to process changes in the database."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

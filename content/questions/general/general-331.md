@@ -12,7 +12,7 @@ options:
   C: "Use a secure VPN connection."
   D: "Use Amazon S3 Transfer Acceleration."
 answer: "A"
-explanation: ""
+explanation: "AWS Snowball is a physical data transport solution that helps customers transfer large amounts of data into and out of AWS. It addresses challenges associated with large-scale data transfers, particularly when network constraints, transfer times, or security concerns make online data transfer less practical."
 tags:
   - general
 ---

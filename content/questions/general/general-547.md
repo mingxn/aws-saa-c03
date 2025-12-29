@@ -11,7 +11,7 @@ options:
   B: "Create organization units (OUs) for each department in AWS Organizations. Attach service control policies (SCPs) to the OUs."
   C: "Use AWS CloudFormation to automatically provision only the AWS services that each department can use."
   D: "Set up a list of products in AWS Service Catalog in the AWS accounts to manage and control the usage of specific AWS services."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

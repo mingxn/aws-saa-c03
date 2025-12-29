@@ -11,7 +11,7 @@ options:
   B: "Create an Amazon RDS database with Multi-AZ deployments."
   C: "Create an Amazon RDS database with Multi-AZ DB cluster deployment."
   D: "Create an Amazon RDS database configured with cross-Region read replicas."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

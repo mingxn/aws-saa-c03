@@ -12,7 +12,7 @@ options:
   B: "Create a Regional AWS WAF web ACL with a rate-based rule. Associate the web ACL with the API Gateway stage."
   C: "Use Amazon CloudWatch metrics to monitor the Count metric and alert the security team when the predened rate is reached."
   D: "Create an Amazon CloudFront distribution with Lambda@Edge in front of the API Gateway Regional API endpoint. Create an AWS Lambda function to block requests from IP addresses that exceed the predened rate."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - api gateway

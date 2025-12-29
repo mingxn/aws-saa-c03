@@ -12,7 +12,7 @@ options:
   B: "Add AWS KMS permissions in the Lambda execution role."
   C: "Add AWS KMS permissions in the Lambda function policy."
   D: "Allow the Lambda execution role in the AWS KMS key policy. E. Allow the Lambda resource policy in the AWS KMS key policy."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - lambda

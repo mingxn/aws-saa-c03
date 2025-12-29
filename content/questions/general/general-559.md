@@ -11,7 +11,7 @@ options:
   B: "Provision the AWS accounts by using AWS Control Tower. Use AWS Cong aggregated rules to identify the changes to the OU hierarchy."
   C: "Use AWS Service Catalog to create accounts in Organizations. Use an AWS CloudTrail organization trail to identify the changes to the OU hierarchy."
   D: "Use AWS CloudFormation templates to create accounts in Organizations. Use the drift detection operation on a stack to identify the changes to the OU hierarchy."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

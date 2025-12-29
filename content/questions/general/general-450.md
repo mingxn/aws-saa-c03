@@ -11,8 +11,8 @@ options:
   B: "Set up security groups and network access control lists (network ACLs) to control access to the database layer. Set up a single Amazon RDS database in a private subnet."
   C: "Create a VPC across two Availability Zones. Refactor the application to host the web tier, application tier, and database tier. Host each tier on its own private subnet with Auto Scaling groups for the web tier and application tier."
   D: "Use a single Amazon RDS database. Allow database access only from the application tier security group. E. Use Elastic Load Balancers in front of the web tier. Control access by using security groups containing references to each layer's security groups. F. Use an Amazon RDS database Multi-AZ cluster deployment in private subnets. Allow database access only from application tier security groups."
-answer: "A"
-explanation: ""
+answer: "C"
+explanation: "This choice aligns with best practices by using separate subnets for each tier, allowing for better security and scalability. Auto Scaling groups provide elasticity and resiliency.  E. Use Elastic Load Balancers in front of the web tier. Control access by using security groups containing references to each layer's security groups.  This option introduces an Elastic Load Balancer (ELB) for the web tier, which enhances scalability and resiliency. Using security groups to control access adds an additional layer of security.  F. Use an Amazon RDS database Multi-AZ cluster deployment in private subnets. Allow database access only from application tier security groups.  This option leverages Amazon RDS for the database tier, utilizing Multi-AZ for high availability. Placing the RDS database in private subnets and restricting access to the application tier security groups enhances security."
 tags:
   - general
 ---

@@ -11,7 +11,7 @@ options:
   B: "Turn on discount sharing from the Billing Preferences section of the account console in the company's Organizations management account."
   C: "Migrate additional compute workloads from another AWS account to the account that has the Compute Savings Plan."
   D: "Sell the excess Savings Plan commitment in the Reserved Instance Marketplace."
-answer: "A"
+answer: "B"
 explanation: ""
 tags:
   - general

@@ -11,8 +11,8 @@ options:
   B: "Amazon Simple Notification Service (Amazon SNS) FIFO topics"
   C: "Amazon Simple Notification Service (Amazon SNS) standard topics"
   D: "Amazon Simple Queue Service (Amazon SQS) FIFO queues"
-answer: "A"
-explanation: ""
+answer: "B"
+explanation: "SNS FIFO also can send events or messages cocurrently to many subscribers while maintaining the order it receives. SNS fanout pattern is set in standard SNS which is commonly used to fan out events to large number of subscribers and usually for duplicated messages."
 tags:
   - general
 ---

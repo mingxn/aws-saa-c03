@@ -11,7 +11,7 @@ options:
   B: "Review events in the Amazon Simple Queue Service (Amazon SQS) dead-letter queue."
   C: "Check for the events in Amazon CloudWatch Logs."
   D: "Check the trails in AWS CloudTrail for the EventBridge events."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

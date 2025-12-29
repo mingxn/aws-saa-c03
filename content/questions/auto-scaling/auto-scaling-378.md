@@ -12,8 +12,8 @@ options:
   B: "Use a Network Load Balancer for traffic distribution and Amazon DynamoDB on-demand for data storage."
   C: "Use a Network Load Balancer for traffic distribution and Amazon Aurora Global Database for data storage."
   D: "Use an Application Load Balancer for traffic distribution and Amazon DynamoDB global tables for data storage."
-answer: ""
-explanation: ""
+answer: "B"
+explanation: "Think of an NLB like a traffic cop for your game. It helps distribute and manage the incoming traffic from players to your game servers. It ensures that the load is balanced across your servers, which is crucial for handling the expected spikes in demand. DynamoDB is a type of database that can store data for your game, such as gamer scores. \"On-demand\" means that DynamoDB automatically scales to handle the amount of data and traffic your game is experiencing."
 tags:
   - autoscaling
   - compute

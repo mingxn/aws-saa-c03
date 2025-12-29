@@ -11,7 +11,7 @@ options:
   B: "Create AWS Service Catalog products for the customers."
   C: "Create AWS Systems Manager templates for the customers."
   D: "Create AWS Cong items for the customers."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

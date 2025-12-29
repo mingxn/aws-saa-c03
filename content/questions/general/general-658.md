@@ -11,7 +11,7 @@ options:
   B: "AWS Direct Connect"
   C: "AWS Snowball Edge Storage Optimized"
   D: "AWS Storage Gateway"
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

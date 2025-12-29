@@ -11,8 +11,8 @@ options:
   B: "Set up IPsec VPN between the mobile app and the AWS environment to stream content."
   C: "Use Amazon CloudFront. Provide signed URLs to stream content."
   D: "Set up AWS Client VPN between the mobile app and the AWS environment to stream content."
-answer: "A"
-explanation: ""
+answer: "C"
+explanation: "Amazon CloudFront: CloudFront is a content delivery network (CDN) service provided by AWS. It accelerates the delivery of content by caching it at edge locations globally, reducing latency for end-users. Signed URLs: CloudFront supports the generation of signed URLs, which can be used to control access to content. You can create time-limited URLs with specific permissions, allowing only authorized users to access the content."
 tags:
   - general
 ---

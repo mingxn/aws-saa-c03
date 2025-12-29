@@ -11,8 +11,8 @@ options:
   B: "Create a custom trail in AWS CloudTrail to prevent tag modication."
   C: "Create a service control policy (SCP) to prevent tag modication except by authorized principals."
   D: "Create custom Amazon CloudWatch logs to prevent tag modication."
-answer: "A"
-explanation: ""
+answer: "C"
+explanation: "SCPs in AWS Organizations are used to set fine-grained permissions on what actions AWS accounts within the organization can perform. You can create a custom SCP to specifically control access to tag modification."
 tags:
   - general
 ---

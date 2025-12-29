@@ -11,8 +11,8 @@ options:
   B: "Deploy the application using Amazon S3 with public hosting enabled."
   C: "Deploy AWS Shield Advanced and add the ALB as a protected resource."
   D: "Create a new ALB that directs traffic to an Amazon EC2 instance running a third-party rewall, which then passes the traffic to the current ALB."
-answer: ""
-explanation: ""
+answer: "A"
+explanation: "AWS WAF (Web Application Firewall) is a service that helps protect web applications from common web exploits by allowing you to define customizable web security rules. It can be associated with an Application Load Balancer (ALB) to filter and block malicious traffic before it reaches the application. AWS WAF is a managed service, which means it reduces the operational burden on the company by handling the infrastructure, updates, and security configurations."
 tags:
   - general
 ---

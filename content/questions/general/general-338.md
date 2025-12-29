@@ -11,7 +11,7 @@ options:
   B: "Set up an Aurora global database for the DB cluster. When setup is complete, remove the DB instance from the secondary Region."
   C: "Use AWS Database Migration Service (AWS DMS) to continuously replicate data to an Aurora cluster in the secondary Region. Remove the DB instance from the secondary Region."
   D: "Set up an Aurora global database for the DB cluster. Specify a minimum of one DB instance in the secondary Region."
-answer: "A"
+answer: "D"
 explanation: ""
 tags:
   - general

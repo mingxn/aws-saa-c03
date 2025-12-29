@@ -11,7 +11,7 @@ options:
   B: "Use an Amazon Aurora global database with a warm standby deployment."
   C: "Use an Amazon RDS Multi-AZ DB instance with a pilot light deployment."
   D: "Use an Amazon RDS Multi-AZ DB instance with a warm standby deployment."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

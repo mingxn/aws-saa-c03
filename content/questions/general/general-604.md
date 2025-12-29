@@ -11,7 +11,7 @@ options:
   B: "Deploy Amazon Elastic Block Store (Amazon EBS) storage with backups to Amazon S3."
   C: "Deploy an AWS Storage Gateway volume gateway that is configured with stored volumes."
   D: "Deploy an AWS Storage Gateway volume gateway that is configured with cached volumes."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

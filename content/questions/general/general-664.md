@@ -11,7 +11,7 @@ options:
   B: "Use AWS CloudFormation to set up the infrastructure. Use AWS Cong to traffick changes."
   C: "Use AWS Organizations to set up the infrastructure. Use AWS Service Catalog to traffick changes."
   D: "Use AWS CloudFormation to set up the infrastructure. Use AWS Service Catalog to traffick changes."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

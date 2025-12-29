@@ -12,7 +12,7 @@ options:
   B: "Set up a scheduled scaling to increase Lambda provisioned concurrency before employees begin to use the application each day."
   C: "Create an Amazon CloudWatch alarm to initiate a Lambda function as a target for the alarm at the beginning of each day."
   D: "Increase the Lambda function memory."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - lambda

@@ -11,7 +11,7 @@ options:
   B: "Create a new trail in CloudTrail from within the developer accounts with the organization trails option enabled."
   C: "Create a service control policy (SCP) that prohibits changes to CloudTrail, and attach it the developer accounts."
   D: "Create a service-linked role for CloudTrail with a policy condition that allows changes only from an Amazon Resource Name (ARN) in the management account."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

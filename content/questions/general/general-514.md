@@ -11,7 +11,7 @@ options:
   B: "Supporting client-side and server-side encryption"
   C: "Building analytics workloads during specied hours and when the application is not active"
   D: "Caching data to reduce the pressure on the backend database E. Scaling globally to support petabytes of data and tens of millions of requests per minute F. Creating a secondary replica of the cluster by using the AWS Management Console"
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

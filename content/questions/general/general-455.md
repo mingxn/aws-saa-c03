@@ -11,8 +11,8 @@ options:
   B: "Use AWS Budgets to create a budget. Set the budget amount under the Billing dashboards of the required AWS accounts."
   C: "Create an IAM user for AWS Budgets to run budget actions with the required permissions."
   D: "Create an IAM role for AWS Budgets to run budget actions with the required permissions. E. Add an alert to notify the company when each account fulfills its budget threshold. Add a budget action that selects the IAM identity created with the appropriate cong rule to prevent provisioning of additional resources. F. Add an alert to notify the company when each account fulfills its budget threshold. Add a budget action that selects the IAM identity created with the appropriate service control policy (SCP) to prevent provisioning of additional resources."
-answer: "A"
-explanation: ""
+answer: "B"
+explanation: "D. Create an IAM role for AWS Budgets to run budget actions with the required permissions.  F. Add an alert to notify the company when each account fulfills its budget threshold. Add a budget action that selects the IAM identity created with the appropriate service control policy (SCP) to prevent provisioning of additional resources."
 tags:
   - general
 ---

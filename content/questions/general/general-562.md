@@ -11,7 +11,7 @@ options:
   B: "Use Amazon EKS Connector to register and connect all Kubernetes clusters."
   C: "Use AWS Systems Manager to collect and view the cluster information."
   D: "Use Amazon EKS Anywhere as the primary cluster to view the other clusters with native Kubernetes commands."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

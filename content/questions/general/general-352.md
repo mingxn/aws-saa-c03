@@ -11,8 +11,8 @@ options:
   B: "Set up AWS Global Accelerator with UDP listeners and endpoint groups in each Region."
   C: "Set up Amazon CloudFront with UDP turned on. Configure an origin in each Region."
   D: "Set up a VPC peering mesh between each Region. Turn on UDP for each VPC."
-answer: "A"
-explanation: ""
+answer: "B"
+explanation: "AWS Global Accelerator is designed to improve the availability and performance of applications by using static IP addresses (Anycast) and directing traffic over the AWS global network. It provides low-latency and high-performance routing, making it well-suited for applications with a global user base, such as multi-player games.  By setting up UDP listeners and endpoint groups in each Region with AWS Global Accelerator, you can efficiently route traffic to the nearest game servers, reducing latency and improving the overall gaming experience."
 tags:
   - general
 ---

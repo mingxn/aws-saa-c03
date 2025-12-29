@@ -12,7 +12,7 @@ options:
   B: "Migrate the database to Amazon Redshift."
   C: "Migrate the database to Amazon RDS."
   D: "Use Amazon ElastiCache for Redis."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - dynamodb

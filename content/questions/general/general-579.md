@@ -11,7 +11,7 @@ options:
   B: "Host the application on an Amazon EC2 instance. Use an Amazon Elastic Block Store (Amazon EBS) GP2 volume to run the application."
   C: "Configure an Auto Scaling group with an Amazon EC2 instance. Use an Amazon FSx for OpenZFS file system to run the application."
   D: "Host the application on an Amazon EC2 instance. Use an Amazon Elastic Block Store (Amazon EBS) GP3 volume to run the application."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

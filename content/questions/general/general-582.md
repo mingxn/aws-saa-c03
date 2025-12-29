@@ -11,7 +11,7 @@ options:
   B: "Use an on-premises backup application to read the data from the tapes and to write directly to Amazon S3 Glacier Deep Archive."
   C: "Order multiple AWS Snowball devices that have Tape Gateway. Copy the physical tapes to virtual tapes in Snowball. Ship the Snowball devices to AWS. Create a lifecycle policy to move the tapes to Amazon S3 Glacier Deep Archive."
   D: "Configure an on-premises Tape Gateway. Create virtual tapes in the AWS Cloud. Use backup software to copy the physical tape to the virtual tape."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

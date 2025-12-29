@@ -11,7 +11,7 @@ options:
   B: "Amazon FSx File Gateway"
   C: "AWS DataSync"
   D: "AWS Transfer Family"
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

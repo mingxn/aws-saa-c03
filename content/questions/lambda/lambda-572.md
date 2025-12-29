@@ -12,7 +12,7 @@ options:
   B: "Increase the timeout of the Lambda functions."
   C: "Increase the memory of the Lambda functions."
   D: "Configure Lambda SnapStart."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - lambda

@@ -11,8 +11,8 @@ options:
   B: "Create an AWS Step Functions workow. Configure Step Functions to handle the orchestration between the application tiers and alert the user when thumbnail generation is complete."
   C: "Create an Amazon Simple Queue Service (Amazon SQS) message queue. As images are uploaded, place a message on the SQS queue for thumbnail generation. Alert the user through an application message that the image was received."
   D: "Create Amazon Simple Notification Service (Amazon SNS) notification topics and subscriptions. Use one subscription with the application to generate the thumbnail after the image upload is complete. Use a second subscription to message the user's mobile app by way of a push notification after thumbnail generation is complete."
-answer: "A"
-explanation: ""
+answer: "C"
+explanation: "Amazon SQS (Simple Queue Service): SQS is a fully managed message queuing service that enables decoupling of the components of a cloud application. By creating an SQS message queue, the image upload process can place messages in the queue for thumbnail generation."
 tags:
   - general
 ---

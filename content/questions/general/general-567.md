@@ -11,7 +11,7 @@ options:
   B: "Amazon S3 Glacier with Amazon ElastiCache"
   C: "Amazon Elastic Block Store (Amazon EBS) volumes with Amazon CloudFront"
   D: "AWS Storage Gateway with Amazon ElastiCache"
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

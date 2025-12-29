@@ -11,7 +11,7 @@ options:
   B: "Use AWS Cong to traffick conguration changes and AWS CloudTrail to record API calls."
   C: "Use AWS Cong to traffick conguration changes and Amazon CloudWatch to record API calls."
   D: "Use AWS CloudTrail to traffick conguration changes and Amazon CloudWatch to record API calls."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

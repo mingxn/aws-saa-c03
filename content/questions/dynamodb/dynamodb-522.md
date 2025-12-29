@@ -12,7 +12,7 @@ options:
   B: "Amazon CloudFront with Lambda@Edge functions"
   C: "Edge-optimized Amazon API Gateway with AWS Lambda functions"
   D: "Amazon Athena Federated Query with a DynamoDB connector"
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - dynamodb

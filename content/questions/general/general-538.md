@@ -11,7 +11,7 @@ options:
   B: "Configure a warm standby Amazon RDS for SQL Server database on AWS. Configure AWS Database Migration Service (AWS DMS) to use change data capture (CDC)."
   C: "Use AWS Elastic Disaster Recovery configured to replicate disk changes to AWS as a pilot light."
   D: "Use third-party backup software to capture backups every night. Store a secondary set of backups in Amazon S3."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

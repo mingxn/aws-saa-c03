@@ -11,7 +11,7 @@ options:
   B: "Set up a secondary Aurora PostgreSQL cluster in the same AWS Region. During failover, update the application to use the secondary cluster's writer endpoint."
   C: "Create an Amazon ElastiCache for Memcached cluster to handle the load during failover."
   D: "Set up an Amazon RDS proxy for the database. Update the application to use the proxy endpoint."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

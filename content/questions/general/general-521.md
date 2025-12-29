@@ -11,7 +11,7 @@ options:
   B: "Use the Kubernetes Metrics Server to activate horizontal pod autoscaling."
   C: "Use the Kubernetes Cluster Autoscaler to manage the number of nodes in the cluster."
   D: "Use Amazon API Gateway and connect it to Amazon EKS. E. Use AWS App Mesh to observe network activity."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

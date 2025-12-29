@@ -11,7 +11,7 @@ options:
   B: "Amazon FSx for NetApp ONTAP with a Multi-AZ deployment"
   C: "Amazon Elastic File System (Amazon EFS) with the Standard storage class"
   D: "Amazon FSx for OpenZFS"
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

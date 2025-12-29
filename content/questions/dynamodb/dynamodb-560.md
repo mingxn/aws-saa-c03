@@ -12,7 +12,7 @@ options:
   B: "Set up Amazon ElastiCache for Redis between the DynamoDB table and the web application. Route all read requests through Redis."
   C: "Set up Amazon ElastiCache for Memcached between the DynamoDB table and the web application. Route all read requests through Memcached."
   D: "Set up Amazon DynamoDB Streams on the table, and have AWS Lambda read from the table and populate Amazon ElastiCache. Route all read requests through ElastiCache."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - dynamodb

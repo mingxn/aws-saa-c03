@@ -11,7 +11,7 @@ options:
   B: "Set up a new 200 Mbps Direct Connect connection in the AWS Management Console."
   C: "Contact an AWS Direct Connect Partner to order a 1 Gbps connection. Share the connection with another AWS account."
   D: "Contact an AWS Direct Connect Partner to order a 200 Mbps hosted connection for an existing AWS account."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

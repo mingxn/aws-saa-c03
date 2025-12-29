@@ -12,8 +12,8 @@ options:
   B: "Create a new IAM user for the deployment engineer and add the IAM user to a group that has the PowerUsers IAM policy attached."
   C: "Create a new IAM user for the deployment engineer and add the IAM user to a group that has the AdministratorAccess IAM policy attached."
   D: "Create a new IAM user for the deployment engineer and add the IAM user to a group that has an IAM policy that allows AWS CloudFormation actions only. E. Create an IAM role for the deployment engineer to explicitly dene the permissions specific to the AWS CloudFormation stack and launch stacks using that IAM role."
-answer: "A"
-explanation: ""
+answer: "D"
+explanation: "E. Create an IAM role for the deployment engineer to explicitly define the permissions specific to the AWS CloudFormation stack and launch stacks using that IAM role.  This ensures that the IAM user has the necessary permissions for AWS CloudFormation but not unnecessary permissions for other AWS services.  IAM roles are more suitable for temporary elevated permissions needed during AWS CloudFormation stack operations. The deployment engineer can assume the role when required, limiting their permissions to only what is needed for those specific actions."
 tags:
   - cloudformation
   - management

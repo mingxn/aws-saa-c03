@@ -11,7 +11,7 @@ options:
   B: "Use AWS Snowcone to move the existing data to Amazon S3. Use AWS CloudTrail to log management events."
   C: "Use Amazon S3 Transfer Acceleration to move the existing data to Amazon S3. Use AWS CloudTrail to log data events."
   D: "Use AWS Storage Gateway to move the existing data to Amazon S3. Use AWS CloudTrail to log management events."
-answer: "A"
+answer: "D"
 explanation: ""
 tags:
   - general

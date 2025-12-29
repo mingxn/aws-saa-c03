@@ -12,8 +12,8 @@ options:
   B: "AWS Lambda"
   C: "Amazon RDS"
   D: "Amazon DynamoDB E. Amazon Elastic Kubernetes Services (Amazon EKS)"
-answer: "A"
-explanation: ""
+answer: "B"
+explanation: "C. Amazon RDS  AWS Lambda is a serverless compute service that automatically scales based on the number of requests and executes your code without requiring you to provision or manage servers. It's event-driven, and you pay only for the compute time consumed. For a REST API, Lambda can be a low-administration solution compared to managing infrastructure directly.  Amazon RDS (Relational Database Service) is a fully managed relational database service that simplifies database administration tasks. It provides options for popular database engines like MySQL, PostgreSQL, Oracle, and Microsoft SQL Server. You can easily provision, scale, and manage a relational database without dealing with the underlying infrastructure."
 tags:
   - api gateway
   - networking

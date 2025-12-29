@@ -11,7 +11,7 @@ options:
   B: "Deploy the applications in AWS Local Zones by extending the company's VPC from eu-central-1 to the chosen Local Zone."
   C: "Deploy the applications in eu-central-1. Extend the company’s VPC from eu-central-1 to the regional edge caches in Amazon CloudFront."
   D: "Deploy the applications in AWS Wavelength Zones by extending the company’s VPC from eu-central-1 to the chosen Wavelength Zone."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

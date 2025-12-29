@@ -11,7 +11,7 @@ options:
   B: "Amazon ElastiCache for Memcached cluster"
   C: "Provisioned IOPS SSD Amazon Elastic Block Store (Amazon EBS) volume"
   D: "Throughput Optimized HDD Amazon Elastic Block Store (Amazon EBS) volume"
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

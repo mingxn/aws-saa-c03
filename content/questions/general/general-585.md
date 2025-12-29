@@ -11,7 +11,7 @@ options:
   B: "Invite the R&D AWS account to be part of the new organization after the R&D AWS account has left the prior organization."
   C: "Create a new R&D AWS account in the new organization. Migrate resources from the prior R&D AWS account to the new R&D AWS account."
   D: "Have the R&D AWS account join the new organization. Make the new management account a member of the prior organization."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

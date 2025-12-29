@@ -11,7 +11,7 @@ options:
   B: "Create an AWS Lambda function triggered by an Amazon EventBridge scheduled event."
   C: "Use an Amazon Elastic Container Service (Amazon ECS) Fargate task triggered by an Amazon EventBridge scheduled event."
   D: "Use an Amazon Elastic Container Service (Amazon ECS) task running on Amazon EC2 triggered by an Amazon EventBridge scheduled event."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

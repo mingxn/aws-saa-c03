@@ -11,7 +11,7 @@ options:
   B: "Create a certificate in AWS certificate Manager (ACM) that is signed by the third-party CA. Create an HTTP API in Amazon API Gateway with a custom domain. Configure the custom domain to use the certificate."
   C: "Use AWS certificate Manager (ACM) to create a certificate that is signed by the third-party CA. Import the certificate into AWS certificate Manager (ACM). Create an AWS Lambda function with a Lambda function URL. Configure the Lambda function URL to use the certificate."
   D: "Create a certificate in AWS certificate Manager (ACM) that is signed by the third-party CA. Create an AWS Lambda function with a Lambda function URL. Configure the Lambda function URL to use the certificate."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

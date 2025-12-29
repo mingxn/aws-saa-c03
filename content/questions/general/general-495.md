@@ -11,7 +11,7 @@ options:
   B: "Deploy an AWS Storage Gateway file gateway to replace NFS storage."
   C: "Deploy AWS Snowball Edge to provision NFS mounts to on-premises servers."
   D: "Deploy an AWS Storage Gateway volume gateway to replace the block storage. E. Deploy Amazon Elastic File System (Amazon EFS) volumes and mount them to on-premises servers."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

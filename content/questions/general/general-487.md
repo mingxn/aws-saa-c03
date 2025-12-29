@@ -11,7 +11,7 @@ options:
   B: "Attach an identity-based policy to deny access to the billing information to all users, including the root user."
   C: "Create a service control policy (SCP) to deny access to the billing information. Attach the SCP to the root organizational unit (OU)."
   D: "Convert from the Organizations all features feature set to the Organizations consolidated billing feature set."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

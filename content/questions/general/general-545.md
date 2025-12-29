@@ -11,7 +11,7 @@ options:
   B: "Set up an Amazon EFS file system that connects with the backup applications using the NFS interface."
   C: "Set up an Amazon EFS file system that connects with the backup applications using the iSCSI interface."
   D: "Set up AWS Storage Gateway to connect with the backup applications using the iSCSI-virtual tape library (VTL) interface."
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - general

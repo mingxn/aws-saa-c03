@@ -12,7 +12,7 @@ options:
   B: "AWS Lambda"
   C: "Amazon DynamoDB"
   D: "Amazon EC2 Auto Scaling E. MySQL-compatible Amazon Aurora"
-answer: "A"
+answer: ""
 explanation: ""
 tags:
   - api gateway
