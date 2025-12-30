@@ -1,0 +1,50 @@
+{{ define "main" }}
+<div class="container exam-review">
+    <div class="review-header">
+        <h1>Exam Review</h1>
+        <div class="review-summary" id="review-summary"></div>
+    </div>
+
+    <div class="review-filters">
+        <label>Filter Questions:</label>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Questions</button>
+            <button class="filter-btn" data-filter="correct">Correct Only</button>
+            <button class="filter-btn" data-filter="incorrect">Incorrect Only</button>
+            <button class="filter-btn" data-filter="flagged">Flagged Only</button>
+        </div>
+    </div>
+
+    <div class="review-content">
+        <div class="review-navigation">
+            <button id="prev-review-btn" class="btn btn-secondary">← Previous</button>
+            <span id="review-progress">Question 1 of 65</span>
+            <button id="next-review-btn" class="btn btn-secondary">Next →</button>
+        </div>
+
+        <div id="review-question-container" class="review-question-card">
+            <!-- Question content will be inserted here by JavaScript -->
+        </div>
+
+        <div class="review-actions">
+            <button id="new-exam-btn" class="btn btn-primary">Start New Exam</button>
+            <button id="back-to-results-btn" class="btn btn-secondary">Back to Results</button>
+        </div>
+    </div>
+
+    <div class="review-sidebar">
+        <h3>Question Navigator</h3>
+        <div id="review-nav-grid" class="nav-grid">
+            <!-- Question buttons will be inserted here by JavaScript -->
+        </div>
+        <div class="nav-legend">
+            <span class="legend-item"><span class="nav-box correct"></span> Correct</span>
+            <span class="legend-item"><span class="nav-box incorrect"></span> Incorrect</span>
+            <span class="legend-item"><span class="nav-box flagged"></span> Flagged</span>
+            <span class="legend-item"><span class="nav-box current"></span> Current</span>
+        </div>
+    </div>
+</div>
+
+<script src="{{ "js/exam-review.js" | relURL }}"></script>
+{{ end }}

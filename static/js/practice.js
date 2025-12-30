@@ -180,7 +180,8 @@ class PracticeSession {
                     optionDiv.innerHTML = `
                         <input type="radio" id="option-${key}" name="answer" value="${key}">
                         <label for="option-${key}">
-                            <strong>${key}:</strong> ${value}
+                            <span class="option-label">${key.toUpperCase()}.</span>
+                            <span class="option-text">${value}</span>
                         </label>
                     `;
                     form.appendChild(optionDiv);

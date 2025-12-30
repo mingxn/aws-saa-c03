@@ -1,0 +1,89 @@
+{{ define "main" }}
+<div class="container exam-session">
+    <div class="exam-header">
+        <div class="mode-indicator">Exam Mode</div>
+        <div class="timer-display" id="timer-display">
+            <span class="timer-label">Time Remaining:</span>
+            <span id="timer" class="timer">2:10:00</span>
+        </div>
+        <div class="progress-info">
+            <span id="question-progress">Question 1 of 65</span>
+        </div>
+    </div>
+
+    <div id="question-container" class="question-card">
+        <div class="question-meta">
+            <div id="question-category" class="category-tags-container"></div>
+            <span class="domain-info" id="question-domain"></span>
+        </div>
+
+        <div class="question-text" id="question-text"></div>
+
+        <form id="exam-form" class="options-list">
+            <!-- Options will be inserted here by JavaScript -->
+        </form>
+
+        <div class="navigation-actions">
+            <button id="prev-question-btn" class="btn btn-secondary">← Previous</button>
+            <button id="flag-question-btn" class="btn btn-outline">⚑ Answer Later</button>
+            <button id="next-question-btn" class="btn btn-primary">Next →</button>
+        </div>
+    </div>
+
+    <div class="exam-sidebar">
+        <div class="exam-progress">
+            <h3>Progress</h3>
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <p id="answered-count" class="answered-info">0 of 65 answered</p>
+        </div>
+
+        <div class="question-navigator">
+            <h3>Question Navigator</h3>
+            <div id="question-nav-grid" class="nav-grid">
+                <!-- Question buttons will be inserted here by JavaScript -->
+            </div>
+            <div class="nav-legend">
+                <span class="legend-item"><span class="nav-box answered"></span> Answered</span>
+                <span class="legend-item"><span class="nav-box flagged"></span> Flagged</span>
+                <span class="legend-item"><span class="nav-box current"></span> Current</span>
+            </div>
+        </div>
+
+        <div class="submit-section">
+            <button id="submit-exam-btn" class="btn btn-primary btn-large" disabled>
+                Submit Exam
+            </button>
+            <p class="submit-note">Answer all questions to enable submit</p>
+        </div>
+    </div>
+</div>
+
+<!-- Results Modal -->
+<div id="results-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <h2>Exam Complete!</h2>
+        <div id="results-summary"></div>
+        <div id="domain-breakdown"></div>
+        <div class="modal-actions">
+            <button id="review-exam-btn" class="btn btn-primary">Review Exam</button>
+            <button id="new-exam-btn" class="btn btn-secondary">New Exam</button>
+        </div>
+    </div>
+</div>
+
+<!-- Confirmation Modal -->
+<div id="confirm-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <h2>Submit Exam?</h2>
+        <p id="confirm-message"></p>
+        <div class="modal-actions">
+            <button id="confirm-submit-btn" class="btn btn-primary">Yes, Submit</button>
+            <button id="cancel-submit-btn" class="btn btn-secondary">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<script src="{{ "js/exam.js" | relURL }}"></script>
+{{ end }}
