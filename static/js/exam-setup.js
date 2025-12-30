@@ -1,6 +1,11 @@
 // Exam Setup - Initialize and configure exam sessions
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Filter out questions without answers
+    if (window.allQuestions) {
+        window.allQuestions = window.allQuestions.filter(q => q.answer && q.answer !== "");
+    }
+
     // Display available questions count
     const availableCount = document.getElementById('available-count');
     if (availableCount && window.allQuestions) {

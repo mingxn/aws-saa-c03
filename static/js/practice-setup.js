@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const availableCount = document.getElementById('available-count');
     const historyList = document.getElementById('history-list');
 
+    // Filter out questions without answers
+    if (window.allQuestions) {
+        window.allQuestions = window.allQuestions.filter(q => q.answer && q.answer !== "");
+    }
+
     // Questions are loaded from the page via window.allQuestions
     // Check if questions are available
     if (!window.allQuestions || window.allQuestions.length === 0) {
